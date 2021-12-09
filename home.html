@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTW Website Template</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sen&amp;display=swap'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/05a8f14e1c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h2><i class="fal fa-tachometer-alt"></i> Dashboard</h2>
+    <section class="container dash">
+        <iframe src="https://kamplit.casa/linuxdash/app/#/system-status" height="600" width="700"></iframe>
+        <iframe src="http://kamplit.casa:8888" height="600" width="700"></iframe>
+        <iframe src="https://kamplit.casa/phpsysinfo/" height="600" width="700"></iframe>
+    </section>
+    <hr>
+    <div class="container wrapper">
+        <div class="pswd-title">
+            <h2><i class="fal fa-unlock-alt"></i> Main Password</h2>
+        </div>
+        <input type="password" value="open4Chris1986!" id="myInput" disabled><br><br>
+        <input type="checkbox" onclick="delugeShow()">Show Password
+    </div>
+    <div class="wrapper">
+        <h3><i class="fal fa-photo-video"></i> Media</h3>
+        <section class="container media">
+            <h3>Download Torrents</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Deluge-Logo.svg/1200px-Deluge-Logo.svg.png"
+                height="200" />
+            <br>
+            <a href="http://kamplit.casa:8112">DELUGE</a>
+
+        </section>
+        <section class="container media">
+            <h3>Watch Torrents</h3>
+            <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/plex-logo.png" height="200">
+            <br>
+            <a href="https://kamplit.casa:32400">PLEX</a>
+        </section>
+
+    </div>
+    <hr>
+
+    <div class="wrapper">
+        <h3 style="margin-right:3vw;"><i class="fal fa-turtle"></i> Misc</h3>
+        <section class="container misc">
+            <h3>Block Ads</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Pi-hole_Logo.png" height="200" />
+            <br>
+            <a href="https://kamplit.casa/admin">Pi Hole</a>
+        </section>
+        <section class="container misc">
+            <h3>File Server</h3>
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/samba-logo-png-transparent.png" height="200" />
+            <br>
+            <a href="smb://10.0.0.144/dietpi">Samba Server</a>
+        </section>
+    </div>
+    <hr>
+    <div class="wrapper">
+        <h3><i class="fal fa-user-crown"></i> Admin Shit</h3>
+        <section class="container admin">
+            <h3>Webmin</h3>
+            <img src="https://logodix.com/logo/1670490.png" height="200" />
+            <br>
+            <a href="https://kamplit.casa:10000">Webmin</a>
+        </section>
+        <section class="container admin">
+            <h3>File Browser</h3>
+
+            <br>
+            <a href="https://kamplit.casa:8084">File Browser</a>
+        </section>
+    </div>
+    <script>
+        function delugeShow() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
